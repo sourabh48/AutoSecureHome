@@ -1,0 +1,347 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.soura.autosecurehome.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:scrollbarStyle="outsideInset"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/halllayout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/message_background"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/hallroom"
+                    android:id="@+id/hallway" />
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/hallway"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/lights"
+                    android:id="@+id/lights" />
+
+
+                <Switch
+                    android:layout_below="@id/hallway"
+                    android:id="@+id/lightswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/lights"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/fan"
+                    android:id="@+id/fan" />
+
+
+                <Switch
+                    android:layout_below="@id/lights"
+                    android:id="@+id/fanswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/fan"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/air_conditioner"
+                    android:id="@+id/textView" />
+
+
+                <Switch
+                    android:id="@+id/ac_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/fanswitch"
+                    android:layout_alignTop="@+id/textView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kitchenlayout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/halllayout"
+                android:background="@drawable/message_background"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/kitchen"
+                    android:id="@+id/kitchen" />
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/kitchen"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/lights"
+                    android:id="@+id/kitchenlights" />
+
+
+                <Switch
+                    android:layout_below="@id/kitchen"
+                    android:id="@+id/kitchenlightswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/kitchenlights"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/exhaust_fan"
+                    android:id="@+id/kitchenfan" />
+
+
+                <Switch
+                    android:layout_below="@id/kitchenlights"
+                    android:id="@+id/kitchenfanswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bedlayout"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kitchenlayout"
+                android:background="@drawable/message_background"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/bedroom"
+                    android:id="@+id/bedroom" />
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/bedroom"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/lights"
+                    android:id="@+id/bedroomlights" />
+
+
+                <Switch
+                    android:layout_below="@id/bedroom"
+                    android:id="@+id/bedroomlightswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/bedroomlights"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/fan"
+                    android:id="@+id/bedroomfan" />
+
+
+                <Switch
+                    android:layout_below="@id/bedroomlights"
+                    android:id="@+id/bedroomfanswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/bedroomfan"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/air_conditioner"
+                    android:id="@+id/bedroom_ac" />
+
+
+                <Switch
+                    android:layout_below="@id/bedroomfan"
+                    android:id="@+id/bedroom_acswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bathroomlayout"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bedlayout"
+                android:background="@drawable/message_background"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/bathroom"
+                    android:id="@+id/bathroom" />
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/bathroom"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/lights"
+                    android:id="@+id/bathroomlights" />
+
+
+                <Switch
+                    android:layout_below="@id/bathroom"
+                    android:id="@+id/bathroomlightswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/bathroomlights"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/exhaust_fan"
+                    android:id="@+id/bathroomfan" />
+
+
+                <Switch
+                    android:layout_below="@id/bathroomlights"
+                    android:id="@+id/bathroomfanswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/bathroomfan"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textColor="#d2d2d2"
+                    android:text="@string/waterheater"
+                    android:id="@+id/bathroomheater" />
+
+
+                <Switch
+                    android:layout_below="@id/bathroomfan"
+                    android:id="@+id/bathroomheaterswitch"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

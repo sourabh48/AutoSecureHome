@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context="com.example.soura.autosecurehome.WeatherFragment">
+
+    <RelativeLayout
+        android:id="@+id/weatherbackground"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/celestial"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/temperature"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/zero_weather"
+            android:textColor="#ffffff"
+            android:textSize="100sp"
+            android:id="@+id/temperature" />
+
+        <TextView
+            android:id="@+id/temperatureunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/temperature"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/temperature"
+            android:text="\u2103"
+            android:textColor="#ffffff"
+            android:textSize="50sp" />
+
+
+        <TextView
+            android:id="@+id/texthumidity"
+            android:text="@string/relative_humidity"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/temperature"
+            android:layout_centerHorizontal="true"
+            android:textSize="23sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/humidity"
+            android:text="@string/zero_weather"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/texthumidity"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+</FrameLayout>
