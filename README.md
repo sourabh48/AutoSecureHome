@@ -51,3 +51,23 @@ The Flame sensors detects nearby flame and writes notification data to database.
 
 ###  Triggers.
 
+We used Firebase Function to trigger Firebase Cloud Function to send Notification to the device. To send the notification we collected a device token. This device token is the unique id for a device. Whenever any new value is pushed in the "Notification" table the firebase function will create a payload according to notification type and send it to device.
+
+### Light Controls:
+
+To control lights we created an android application to switch on and off the electrical appliances.
+
+### Android Application
+
+The UI is very simple and basic and can be used by anyone.
+
+## How to Setup?
+
+Please refer to my other Repository "Sending Notification Using Firebase Function And Firebase Cloud Messaging".
+
+### Note:
+
+##### This index.js is written using beta version of firebase tools. Please refer to firebase documentation or my other Repository that I have built specially to show the updated coding.  
+
+
+
