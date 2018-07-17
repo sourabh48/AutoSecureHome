@@ -7,4 +7,6 @@ home-automation and security in your home easily.
 
 ## Equipments needed:
 
-> ModeMCU(esp8266)
+- ModeMCU(esp8266)
+- Android Studio
+- 
