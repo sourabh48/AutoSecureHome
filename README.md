@@ -69,5 +69,6 @@ Please refer to my other Repository "Sending Notification Using Firebase Functio
 
 ##### This index.js is written using beta version of firebase tools. Please refer to firebase documentation or my other Repository that I have built specially to show the updated coding.  
 
+## Contents:
 
-
+It contains the android application, nodemcu codes and screenshots etc. 
