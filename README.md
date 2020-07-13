@@ -72,3 +72,9 @@ Please refer to my other Repository "Sending Notification Using Firebase Functio
 ## Contents:
 
 It contains the android application, nodemcu codes and screenshots etc. 
+
+
+## Support
+If you think my projects are helpful you can contribute me anything at paypal.me/sourabh48
+
+
